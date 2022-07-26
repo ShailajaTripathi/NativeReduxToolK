@@ -8,7 +8,7 @@ const cakeSlice = createSlice({
     initialState, // same as => initialState:initialState
     reducers:{
         ordered:(state)=>{
-            // we don't have to explisitly written the state and too we can directly mutate the state
+            // we don't have to explicitly written the state and too we can directly mutate the state
             state.numOfCakes-- // this is possible because create slice under the hood uses immer library,redux toolkit handles the state updation on our behalf
         },
         restocked :(state,action)=>{
